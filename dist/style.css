@@ -104,7 +104,7 @@ button, .button {
 
 .button-85:before {
   content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #feea5a, #000000, #feea5a, #000000);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -154,13 +154,13 @@ button, .button {
   }
 }
 
-.header.open .header__menu > span:first-child {
+.header.open .header__toggle > span:first-child {
   transform: rotate(45deg);
 }
-.header.open .header__menu > span:nth-child(2) {
+.header.open .header__toggle > span:nth-child(2) {
   opacity: 0;
 }
-.header.open .header__menu > span:last-child {
+.header.open .header__toggle > span:last-child {
   transform: rotate(-45deg);
 }
 .header .overlay {
@@ -174,9 +174,8 @@ button, .button {
 }
 .header nav {
   padding: 1rem 1.25rem;
-  background-color: #03030b;
-  background-image: url("images/HeaderBackground1.jpg");
   min-height: 100px;
+  background-color: black;
   background-size: cover;
   background-position: center;
 }
@@ -187,7 +186,7 @@ button, .button {
 .header__logo:hover {
   opacity: 0.75;
 }
-.header__menu > span {
+.header__toggle > span {
   display: block;
   width: 26px;
   height: 2px;
@@ -195,7 +194,7 @@ button, .button {
   transition: all 300ms ease-in-out;
   transform-origin: 3px 1px;
 }
-.header__menu > span:not(:last-child) {
+.header__toggle > span:not(:last-child) {
   margin-bottom: 5px;
 }
 .header__links a {
